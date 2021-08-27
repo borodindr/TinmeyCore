@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum WorkTypeAPIModel: String, Codable {
+public enum WorkTypeAPIModel: String, Codable {
     case cover
     case layout
 }
