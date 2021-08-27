@@ -8,9 +8,9 @@
 import Foundation
 
 public struct WorkAPIModel: Codable {
-    public let id: UUID?
-    public let createdAt: Date?
-    public let updatedAt: Date?
+    public let id: UUID
+    public let createdAt: Date
+    public let updatedAt: Date
     public let title: String
     public let shortDescription: String
     public let description: String
@@ -19,9 +19,9 @@ public struct WorkAPIModel: Codable {
     // comments
     
     public init(
-        id: UUID?,
-        createdAt: Date?,
-        updatedAt: Date?,
+        id: UUID,
+        createdAt: Date,
+        updatedAt: Date,
         title: String,
         shortDescription: String,
         description: String
@@ -55,16 +55,16 @@ extension WorkAPIModel {
 
 extension WorkAPIModel {
     public struct Short: Codable {
-        public let id: UUID?
-        public let createdAt: Date?
-        public let updatedAt: Date?
+        public let id: UUID
+        public let createdAt: Date
+        public let updatedAt: Date
         public let title: String
         public let shortDescription: String
         
         public init(
-            id: UUID?,
-            createdAt: Date?,
-            updatedAt: Date?,
+            id: UUID,
+            createdAt: Date,
+            updatedAt: Date,
             title: String,
             shortDescription: String
         ) {
