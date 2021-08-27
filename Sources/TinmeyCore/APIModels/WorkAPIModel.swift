@@ -17,6 +17,7 @@ public struct WorkAPIModel: Codable {
     // layout
     // tags
     // comments
+    
 }
 
 extension WorkAPIModel {
