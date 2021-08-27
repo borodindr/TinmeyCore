@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct WorkAPIModel: Codable {
+public struct WorkAPIModel: Codable, Hashable {
     public let id: UUID
     public let createdAt: Date
     public let updatedAt: Date
@@ -36,7 +36,7 @@ public struct WorkAPIModel: Codable {
 }
 
 extension WorkAPIModel {
-    public struct Create: Codable {
+    public struct Create: Codable, Hashable {
         public let title: String
         public let shortDescription: String
         public let description: String
@@ -54,7 +54,7 @@ extension WorkAPIModel {
 }
 
 extension WorkAPIModel {
-    public struct Short: Codable {
+    public struct Short: Codable, Hashable {
         public let id: UUID
         public let createdAt: Date
         public let updatedAt: Date
