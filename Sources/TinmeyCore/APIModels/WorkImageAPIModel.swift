@@ -8,7 +8,7 @@
 import Foundation
 
 public struct WorkImageAPIModel: Codable, Hashable {
-    let id: UUID
-    let downloadURL: String
-    let sortIndex: Int
+    public let id: UUID
+    public let downloadURL: String
+    public let sortIndex: Int
 }
