@@ -14,6 +14,7 @@ public struct WorkAPIModel: Codable, Hashable {
     public let title: String
     public let shortDescription: String
     public let description: String
+    public let imageIDs: [UUID]
     // layout
     // tags
     // comments
@@ -24,7 +25,8 @@ public struct WorkAPIModel: Codable, Hashable {
         updatedAt: Date,
         title: String,
         shortDescription: String,
-        description: String
+        description: String,
+        imageIDs: [UUID]
     ) {
         self.id = id
         self.createdAt = createdAt
@@ -32,6 +34,7 @@ public struct WorkAPIModel: Codable, Hashable {
         self.title = title
         self.shortDescription = shortDescription
         self.description = description
+        self.imageIDs = imageIDs
     }
 }
 
@@ -60,19 +63,22 @@ extension WorkAPIModel {
         public let updatedAt: Date
         public let title: String
         public let shortDescription: String
+        public let imageID: UUID?
         
         public init(
             id: UUID,
             createdAt: Date,
             updatedAt: Date,
             title: String,
-            shortDescription: String
+            shortDescription: String,
+            imageID: UUID?
         ) {
             self.id = id
             self.createdAt = createdAt
             self.updatedAt = updatedAt
             self.title = title
             self.shortDescription = shortDescription
+            self.imageID = imageID
         }
     }
 }
