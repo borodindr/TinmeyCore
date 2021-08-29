@@ -40,15 +40,18 @@ public struct WorkAPIModel: Codable, Hashable {
 
 extension WorkAPIModel {
     public struct Create: Codable, Hashable {
+        public let type: WorkTypeAPIModel
         public let title: String
         public let shortDescription: String
         public let description: String
         
         public init(
+            type: WorkTypeAPIModel,
             title: String,
             shortDescription: String,
             description: String
         ) {
+            self.type = type
             self.title = title
             self.shortDescription = shortDescription
             self.description = description
