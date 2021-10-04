@@ -14,8 +14,6 @@ public struct WorkAPIModel: Codable, Hashable {
     public let title: String
     public let description: String
     public let layout: LayoutTypeAPIModel
-    public let firstImageURL: URL?
-    public let secondImageURL: URL?
     // tags
     // comments
     
@@ -25,9 +23,7 @@ public struct WorkAPIModel: Codable, Hashable {
         updatedAt: Date,
         title: String,
         description: String,
-        layout: LayoutTypeAPIModel,
-        firstImageURL: URL? = nil,
-        secondImageURL: URL? = nil
+        layout: LayoutTypeAPIModel
     ) {
         self.id = id
         self.createdAt = createdAt
@@ -35,8 +31,6 @@ public struct WorkAPIModel: Codable, Hashable {
         self.title = title
         self.description = description
         self.layout = layout
-        self.firstImageURL = firstImageURL
-        self.secondImageURL = secondImageURL
     }
 }
 
