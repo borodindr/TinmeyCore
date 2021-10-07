@@ -14,6 +14,7 @@ public struct WorkAPIModel: Codable, Hashable {
     public let title: String
     public let description: String
     public let layout: LayoutTypeAPIModel
+    public let seeMoreLink: URL?
     // tags
     // comments
     
@@ -23,7 +24,8 @@ public struct WorkAPIModel: Codable, Hashable {
         updatedAt: Date,
         title: String,
         description: String,
-        layout: LayoutTypeAPIModel
+        layout: LayoutTypeAPIModel,
+        seeMoreLink: URL?
     ) {
         self.id = id
         self.createdAt = createdAt
@@ -31,6 +33,7 @@ public struct WorkAPIModel: Codable, Hashable {
         self.title = title
         self.description = description
         self.layout = layout
+        self.seeMoreLink = seeMoreLink
     }
 }
 
@@ -40,20 +43,23 @@ extension WorkAPIModel {
         public let title: String
         public let description: String
         public let layout: LayoutTypeAPIModel
+        public let seeMoreLink: URL?
         
         public init(
             type: WorkTypeAPIModel,
             title: String,
             description: String,
-            layout: LayoutTypeAPIModel
+            layout: LayoutTypeAPIModel,
+            seeMoreLink: URL?
         ) {
             self.type = type
             self.title = title
             self.description = description
             self.layout = layout
+            self.seeMoreLink = seeMoreLink
         }
     }
-}
+}
 
 extension WorkAPIModel {
     public enum ReorderDirection: String, Codable, Hashable {
