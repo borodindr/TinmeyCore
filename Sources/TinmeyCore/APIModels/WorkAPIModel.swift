@@ -55,29 +55,8 @@ extension WorkAPIModel {
     }
 }
 
-//extension WorkAPIModel {
-//    public struct Short: Codable, Hashable {
-//        public let id: UUID
-//        public let createdAt: Date
-//        public let updatedAt: Date
-//        public let title: String
-//        public let shortDescription: String
-//        public let imageID: UUID?
-//
-//        public init(
-//            id: UUID,
-//            createdAt: Date,
-//            updatedAt: Date,
-//            title: String,
-//            shortDescription: String,
-//            imageID: UUID?
-//        ) {
-//            self.id = id
-//            self.createdAt = createdAt
-//            self.updatedAt = updatedAt
-//            self.title = title
-//            self.shortDescription = shortDescription
-//            self.imageID = imageID
-//        }
-//    }
-//}
+extension WorkAPIModel {
+    public enum ReorderDirection: String, Codable, Hashable {
+        case forward, backward
+    }
+}
