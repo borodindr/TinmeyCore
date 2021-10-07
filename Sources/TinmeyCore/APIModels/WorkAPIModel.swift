@@ -59,7 +59,7 @@ extension WorkAPIModel {
             self.seeMoreLink = seeMoreLink
         }
     }
-}
+}
 
 extension WorkAPIModel {
     public enum ReorderDirection: String, Codable, Hashable {
