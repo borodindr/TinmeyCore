@@ -8,9 +8,9 @@
 import Foundation
 
 public struct UserAPIModel: Codable, Hashable {
-    let id: UUID
-    let username: String
-    let isMain: Bool
+    public let id: UUID
+    public let username: String
+    public let isMain: Bool
     
     public init(id: UUID, username: String, isMain: Bool) {
         self.id = id
@@ -22,8 +22,8 @@ public struct UserAPIModel: Codable, Hashable {
 
 extension UserAPIModel {
     public struct LoginResult: Codable, Hashable {
-        let user: UserAPIModel
-        let token: String
+        public let user: UserAPIModel
+        public let token: String
         
         public init(user: UserAPIModel, token: String) {
             self.user = user

@@ -8,11 +8,11 @@
 import Foundation
 
 public struct ProfileAPIModel: Codable, Hashable {
-    let name: String
-    let email: String
-    let currentStatus: String
-    let shortAbout: String
-    let about: String
+    public let name: String
+    public let email: String
+    public let currentStatus: String
+    public let shortAbout: String
+    public let about: String
     
     public init(name: String, email: String, currentStatus: String, shortAbout: String, about: String) {
         self.name = name
