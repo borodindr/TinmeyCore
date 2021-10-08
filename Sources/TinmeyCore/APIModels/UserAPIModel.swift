@@ -24,5 +24,10 @@ extension UserAPIModel {
     public struct LoginResult: Codable, Hashable {
         let user: UserAPIModel
         let token: String
+        
+        public init(user: UserAPIModel, token: String) {
+            self.user = user
+            self.token = token
+        }
     }
 }
