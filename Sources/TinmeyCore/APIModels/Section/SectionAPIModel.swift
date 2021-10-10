@@ -11,6 +11,10 @@ public struct SectionAPIModel: Codable, Hashable {
     public let type: SectionType
     public let preview: Preview
     
+    public init(type: SectionAPIModel.SectionType, preview: SectionAPIModel.Preview) {
+        self.type = type
+        self.preview = preview
+    }
 }
 
 extension SectionAPIModel {
