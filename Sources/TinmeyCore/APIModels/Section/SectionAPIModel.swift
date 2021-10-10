@@ -8,7 +8,7 @@
 import Foundation
 
 public struct SectionAPIModel: Codable, Hashable {
-    public let type: SectionTypeAPIModel
+    public let type: SectionType
     public let preview: Preview
     
 }
