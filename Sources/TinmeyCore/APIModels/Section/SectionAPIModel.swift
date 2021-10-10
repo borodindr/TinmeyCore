@@ -21,6 +21,11 @@ extension SectionAPIModel {
     public struct Preview: Codable, Hashable {
         public let title: String
         public let subtitle: String
+        
+        public init(title: String, subtitle: String) {
+            self.title = title
+            self.subtitle = subtitle
+        }
     }
     
     public enum SectionType: String, Codable, Hashable {
