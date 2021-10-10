@@ -13,10 +13,17 @@ public struct SectionAPIModel: Codable, Hashable {
     
 }
 
-extension SectionTypeAPIModel {
+extension SectionAPIModel {
     public struct Preview: Codable, Hashable {
         public let title: String
         public let subtitle: String
+    }
+    
+    public enum SectionTypeAPIModel: String, Codable, Hashable {
+        case covers
+        case layouts
+        case about
+        // case blog
     }
     
 }
