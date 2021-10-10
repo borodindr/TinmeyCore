@@ -19,7 +19,7 @@ extension SectionAPIModel {
         public let subtitle: String
     }
     
-    public enum SectionTypeAPIModel: String, Codable, Hashable {
+    public enum SectionType: String, Codable, Hashable {
         case covers
         case layouts
         case about
