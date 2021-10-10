@@ -8,7 +8,7 @@
 import Foundation
 
 extension WorkAPIModel {
-    public enum LayoutTypeAPIModel: String, Codable, Hashable {
+    public enum LayoutType: String, Codable, Hashable {
         case leftBody
         case middleBody
         case rightBody
