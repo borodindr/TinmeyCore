@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Tag: Codable, Hashable {
+public struct TagAPIModel: Codable, Hashable {
     public let id: UUID
     public let name: String
     public let works: [WorkAPIModel]
