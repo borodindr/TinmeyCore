@@ -8,11 +8,12 @@
 import Foundation
 
 extension TagAPIModel {
-    public struct Create: Codable, Hashable {
-        public let name: String
-        
-        public init(name: String) {
-            self.name = name
-        }
-    }
+    public typealias Create = String
+//    public struct Create: Codable, Hashable {
+//        public let name: String
+//
+//        public init(name: String) {
+//            self.name = name
+//        }
+//    }
 }
