@@ -7,14 +7,14 @@
 
 import Foundation
 
-public struct TagAPIModel: Codable, Hashable {
-    public let id: UUID
-    public let name: String
-//    public let works: [WorkAPIModel]
-    
-    public init(id: UUID, name: String) {//, works: [WorkAPIModel]) {
-        self.id = id
-        self.name = name
-//        self.works = works
-    }
-}
+//public struct TagAPIModel: Codable, Hashable {
+//    public let id: UUID
+//    public let name: String
+////    public let works: [WorkAPIModel]
+//    
+//    public init(id: UUID, name: String) {//, works: [WorkAPIModel]) {
+//        self.id = id
+//        self.name = name
+////        self.works = works
+//    }
+//}

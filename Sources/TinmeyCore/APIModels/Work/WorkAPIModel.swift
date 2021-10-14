@@ -15,7 +15,7 @@ public struct WorkAPIModel: Codable, Hashable {
     public let description: String
     public let layout: LayoutType
     public let seeMoreLink: URL?
-    public let tags: [TagAPIModel]
+    public let tags: [String]
     // tags
     // comments
     
@@ -27,7 +27,7 @@ public struct WorkAPIModel: Codable, Hashable {
         description: String,
         layout: LayoutType,
         seeMoreLink: URL?,
-        tags: [TagAPIModel]
+        tags: [String]
     ) {
         self.id = id
         self.createdAt = createdAt

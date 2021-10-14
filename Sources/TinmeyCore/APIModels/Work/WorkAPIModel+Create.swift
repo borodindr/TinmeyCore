@@ -14,7 +14,7 @@ extension WorkAPIModel {
         public let description: String
         public let layout: LayoutType
         public let seeMoreLink: URL?
-        public let tags: [TagAPIModel.Create]
+        public let tags: [String]
         
         public init(
             type: WorkType,
@@ -22,7 +22,7 @@ extension WorkAPIModel {
             description: String,
             layout: LayoutType,
             seeMoreLink: URL?,
-            tags: [TagAPIModel.Create] = []
+            tags: [String] = []
         ) {
             self.type = type
             self.title = title

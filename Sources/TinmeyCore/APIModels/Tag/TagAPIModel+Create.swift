@@ -7,13 +7,13 @@
 
 import Foundation
 
-extension TagAPIModel {
-    public typealias Create = String
-//    public struct Create: Codable, Hashable {
-//        public let name: String
-//
-//        public init(name: String) {
-//            self.name = name
-//        }
-//    }
-}
+//extension TagAPIModel {
+//    public typealias Create = String
+////    public struct Create: Codable, Hashable {
+////        public let name: String
+////
+////        public init(name: String) {
+////            self.name = name
+////        }
+////    }
+//}
