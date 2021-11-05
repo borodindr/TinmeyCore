@@ -11,7 +11,6 @@ extension SectionAPIModel {
     public enum SectionType: String, Codable, Hashable {
         case covers
         case layouts
-        case about
         // case blog
     }
 }
