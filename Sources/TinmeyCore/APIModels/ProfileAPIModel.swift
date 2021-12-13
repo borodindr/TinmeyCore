@@ -10,17 +10,20 @@ import Foundation
 public struct ProfileAPIModel: Codable, Hashable {
     public let name: String
     public let email: String
+    public let location: String
     public let shortAbout: String
     public let about: String
     
     public init(
         name: String,
         email: String,
+        location: String,
         shortAbout: String,
         about: String
     ) {
         self.name = name
         self.email = email
+        self.location = location
         self.shortAbout = shortAbout
         self.about = about
     }
