@@ -12,7 +12,7 @@ extension WorkAPIModel {
         public let type: WorkType
         public let title: String
         public let description: String
-        public let layout: LayoutType
+        public let items: [Item]
         public let seeMoreLink: URL?
         public let tags: [String]
         
@@ -20,14 +20,14 @@ extension WorkAPIModel {
             type: WorkType,
             title: String,
             description: String,
-            layout: LayoutType,
+            items: [Item],
             seeMoreLink: URL?,
             tags: [String] = []
         ) {
             self.type = type
             self.title = title
             self.description = description
-            self.layout = layout
+            self.items = items
             self.seeMoreLink = seeMoreLink
             self.tags = tags
         }
