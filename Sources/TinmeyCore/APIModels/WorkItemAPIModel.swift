@@ -9,10 +9,10 @@ import Foundation
 
 public struct WorkItemAPIModel: Codable, Hashable {
     public let id: UUID
-    public let type: WorkItemTypeAPIModel
+    public let type: WorkItemType
 }
 
-public enum WorkItemTypeAPIModel: Codable, Hashable {
+public enum WorkItemType: Codable, Hashable {
     case body
     case image(name: String?)
     case clear
