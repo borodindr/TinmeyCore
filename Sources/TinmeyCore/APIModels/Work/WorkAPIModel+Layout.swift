@@ -7,13 +7,13 @@
 
 import Foundation
 
-//extension WorkAPIModel {
-//    public enum LayoutType: String, Codable, Hashable {
-//        case leftBody
-//        case middleBody
-//        case rightBody
-//        case leftLargeBody
-//        case rightLargeBody
-//    }
-//    
-//}
+extension WorkAPIModel {
+    public enum LayoutType: String, Codable, Hashable {
+        case leftBody
+        case middleBody
+        case rightBody
+        case leftLargeBody
+        case rightLargeBody
+    }
+    
+}
