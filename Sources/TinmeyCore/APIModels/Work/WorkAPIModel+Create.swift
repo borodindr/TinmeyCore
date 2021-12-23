@@ -12,7 +12,7 @@ extension WorkAPIModel {
         public let type: WorkType
         public let title: String
         public let description: String
-        public let items: [Item]
+        public let items: [Item.Create]
         public let seeMoreLink: URL?
         public let tags: [String]
         
@@ -20,7 +20,7 @@ extension WorkAPIModel {
             type: WorkType,
             title: String,
             description: String,
-            items: [Item],
+            items: [Item.Create],
             seeMoreLink: URL?,
             tags: [String] = []
         ) {

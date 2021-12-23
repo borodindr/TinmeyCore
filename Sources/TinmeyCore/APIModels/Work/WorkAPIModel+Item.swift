@@ -13,11 +13,14 @@ extension WorkAPIModel {
         case image(id: UUID, path: String?)
         case clear(id: UUID)
         
-        enum Create: Codable, Hashable {
-            case body
-            case image
-            case clear
-        }
+    }
+}
+
+extension WorkAPIModel.Item {
+    public enum Create: Codable, Hashable {
+        case body
+        case image
+        case clear
     }
 }
 
