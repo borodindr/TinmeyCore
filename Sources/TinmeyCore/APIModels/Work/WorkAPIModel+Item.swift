@@ -9,7 +9,7 @@ import Foundation
 
 extension WorkAPIModel {
     public enum Item: Codable, Hashable {
-        case body(id: UUID, data: BodyData)
+        case body(id: UUID, title: String, description: String, tags: [String])
         case image(id: UUID, path: String?)
         case clear(id: UUID)
     }
@@ -22,18 +22,16 @@ extension WorkAPIModel.Item {
         case clear
     }
     
-    public struct BodyData: Codable, Hashable {
-        public let title: String
-        public let description: String
-        public let seeMoreLink: URL?
-        public let tags: [String]
-        
-        public init(title: String, description: String, seeMoreLink: URL?, tags: [String]) {
-            self.title = title
-            self.description = description
-            self.seeMoreLink = seeMoreLink
-            self.tags = tags
-        }
-    }
+//    public struct BodyData: Codable, Hashable {
+//        public let title: String
+//        public let description: String
+//        public let tags: [String]
+//
+//        public init(title: String, description: String, tags: [String]) {
+//            self.title = title
+//            self.description = description
+//            self.tags = tags
+//        }
+//    }
 }
 

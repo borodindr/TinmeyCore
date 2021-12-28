@@ -14,7 +14,7 @@ public struct WorkAPIModel: Codable, Hashable {
 //    public let title: String
 //    public let description: String
     public let items: [Item]
-//    public let seeMoreLink: URL?
+    public let seeMoreLink: URL?
 //    public let tags: [String]
     
     public init(
@@ -23,8 +23,8 @@ public struct WorkAPIModel: Codable, Hashable {
         updatedAt: Date,
 //        title: String,
 //        description: String,
-        items: [Item]
-//        seeMoreLink: URL?,
+        items: [Item],
+        seeMoreLink: URL?
 //        tags: [String]
     ) {
         self.id = id
@@ -33,7 +33,7 @@ public struct WorkAPIModel: Codable, Hashable {
 //        self.title = title
 //        self.description = description
         self.items = items
-//        self.seeMoreLink = seeMoreLink
+        self.seeMoreLink = seeMoreLink
 //        self.tags = tags
     }
 }
