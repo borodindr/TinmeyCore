@@ -11,12 +11,17 @@ extension WorkAPIModel {
     public struct Image: Codable, Hashable {
         public let id: UUID
         public let path: String?
+        
+        public init(id: UUID, path: String?) {
+            self.id = id
+            self.path = path
+        }
     }
 }
 
 extension WorkAPIModel.Image {
     public struct Create: Codable, Hashable {
-        
+        public init() { }
     }
 }
 
