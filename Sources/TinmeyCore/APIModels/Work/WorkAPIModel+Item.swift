@@ -8,18 +8,15 @@
 import Foundation
 
 extension WorkAPIModel {
-    public enum Item: Codable, Hashable {
-        case body(id: UUID)
-        case image(id: UUID, path: String?)
-        case clear(id: UUID)
+    public struct Image: Codable, Hashable {
+        public let id: UUID
+        public let path: String?
     }
 }
 
-extension WorkAPIModel.Item {
-    public enum Create: Codable, Hashable {
-        case body
-        case image
-        case clear
+extension WorkAPIModel.Image {
+    public struct Create: Codable, Hashable {
+        
     }
 }
 
