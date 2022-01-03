@@ -12,24 +12,27 @@ extension WorkAPIModel {
         public let type: WorkType
         public let title: String
         public let description: String
-        public let images: [Image.Create]
-        public let seeMoreLink: URL?
         public let tags: [String]
+        public let seeMoreLink: URL?
+        public let bodyIndex: Int
+        public let images: [Image.Create]
         
         public init(
             type: WorkType,
             title: String,
             description: String,
-            images: [Image.Create],
+            tags: [String] = [],
             seeMoreLink: URL?,
-            tags: [String] = []
+            bodyIndex: Int,
+            images: [Image.Create]
         ) {
             self.type = type
             self.title = title
             self.description = description
-            self.images = images
-            self.seeMoreLink = seeMoreLink
             self.tags = tags
+            self.seeMoreLink = seeMoreLink
+            self.bodyIndex = bodyIndex
+            self.images = images
         }
     }
 }

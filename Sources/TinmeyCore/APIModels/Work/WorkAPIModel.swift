@@ -13,9 +13,10 @@ public struct WorkAPIModel: Codable, Hashable {
     public let updatedAt: Date
     public let title: String
     public let description: String
-    public let images: [Image]
-    public let seeMoreLink: URL?
     public let tags: [String]
+    public let seeMoreLink: URL?
+    public let bodyIndex: Int
+    public let images: [Image]
     
     public init(
         id: UUID,
@@ -23,17 +24,19 @@ public struct WorkAPIModel: Codable, Hashable {
         updatedAt: Date,
         title: String,
         description: String,
-        images: [Image],
+        tags: [String],
         seeMoreLink: URL?,
-        tags: [String]
+        bodyIndex: Int,
+        images: [Image]
     ) {
         self.id = id
         self.createdAt = createdAt
         self.updatedAt = updatedAt
         self.title = title
         self.description = description
-        self.images = images
-        self.seeMoreLink = seeMoreLink
         self.tags = tags
+        self.seeMoreLink = seeMoreLink
+        self.bodyIndex = bodyIndex
+        self.images = images
     }
 }
