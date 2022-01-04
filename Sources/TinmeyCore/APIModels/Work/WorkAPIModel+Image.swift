@@ -21,7 +21,11 @@ extension WorkAPIModel {
 
 extension WorkAPIModel.Image {
     public struct Create: Codable, Hashable {
-        public init() { }
+        public let id: UUID?
+        
+        public init(id: UUID? = nil) {
+            self.id = id
+        }
     }
 }
 
