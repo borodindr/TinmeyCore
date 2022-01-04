@@ -9,7 +9,7 @@ import Foundation
 
 extension WorkAPIModel {
     public struct Create: Codable, Hashable {
-        public let type: WorkType
+//        public let type: WorkType
         public let title: String
         public let description: String
         public let tags: [String]
@@ -18,7 +18,7 @@ extension WorkAPIModel {
         public let images: [Image.Create]
         
         public init(
-            type: WorkType,
+//            type: WorkType,
             title: String,
             description: String,
             tags: [String] = [],
@@ -26,7 +26,7 @@ extension WorkAPIModel {
             bodyIndex: Int,
             images: [Image.Create]
         ) {
-            self.type = type
+//            self.type = type
             self.title = title
             self.description = description
             self.tags = tags
