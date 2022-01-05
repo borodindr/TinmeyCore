@@ -9,27 +9,27 @@ import Foundation
 
 extension WorkAPIModel {
     public struct Create: Codable, Hashable {
-        public let type: WorkType
         public let title: String
         public let description: String
-        public let layout: LayoutType
-        public let seeMoreLink: URL?
         public let tags: [String]
+        public let seeMoreLink: URL?
+        public let bodyIndex: Int
+        public let images: [Image.Create]
         
         public init(
-            type: WorkType,
             title: String,
             description: String,
-            layout: LayoutType,
+            tags: [String] = [],
             seeMoreLink: URL?,
-            tags: [String] = []
+            bodyIndex: Int,
+            images: [Image.Create]
         ) {
-            self.type = type
             self.title = title
             self.description = description
-            self.layout = layout
-            self.seeMoreLink = seeMoreLink
             self.tags = tags
+            self.seeMoreLink = seeMoreLink
+            self.bodyIndex = bodyIndex
+            self.images = images
         }
     }
 }
