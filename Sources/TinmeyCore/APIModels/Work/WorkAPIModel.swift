@@ -36,7 +36,7 @@ public struct WorkAPIModel: Codable, Hashable {
 }
 
 // TODO: remove on next minor version
-extension WorkAPIModel {
+public extension WorkAPIModel {
     @available(*, deprecated, renamed: "ReorderDirectionAPIModel")
-    typealias ReorderDirection = ReorderDirectionAPIModel
+    public typealias ReorderDirection = ReorderDirectionAPIModel
 }
