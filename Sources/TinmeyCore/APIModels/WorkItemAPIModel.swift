@@ -16,5 +16,4 @@ public enum WorkItemTypeAPIModel: Codable, Hashable {
     case body
     case image(name: String?)
     case clear
-    
 }

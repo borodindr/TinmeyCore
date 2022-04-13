@@ -2,12 +2,12 @@
 //  File.swift
 //  
 //
-//  Created by Dmitry Borodin on 21.12.2021.
+//  Created by Dmitry Borodin on 13.04.2022.
 //
 
 import Foundation
 
-extension WorkAPIModel {
+extension LayoutAPIModel {
     public struct Image: Codable, Hashable {
         public let id: UUID
         public let path: String?
@@ -19,7 +19,7 @@ extension WorkAPIModel {
     }
 }
 
-extension WorkAPIModel.Image {
+extension LayoutAPIModel.Image {
     public struct Create: Codable, Hashable {
         public let id: UUID?
         

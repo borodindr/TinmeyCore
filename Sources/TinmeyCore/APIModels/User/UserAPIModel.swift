@@ -17,5 +17,4 @@ public struct UserAPIModel: Codable, Hashable {
         self.username = username
         self.isMain = isMain
     }
-    
 }
